@@ -1,0 +1,90 @@
+.container {
+    padding: 0 20px;
+
+    .title,
+    p,
+    hr,
+    .group,
+    .avatar {
+        margin-bottom: 20px;
+    }
+
+    .title a{
+        color: $light-text-color;
+        text-decoration: none;
+        font-weight: map-get($map: $font-weights, $key: "bold");                
+    }
+
+    .title a:hover {
+        cursor: pointer;
+        color: $secondary-text-color;
+    }
+
+    p {    
+        color: $primary-text-color;                     
+        font-weight: map-get($map: $font-weights, $key: "normal");
+    }
+
+    .group
+    {
+        display: flex;
+        justify-content: space-between;
+        font-weight: map-get($map: $font-weights, $key: "light");
+
+        .ethereum,
+        .clock {
+            display: inline-block; 
+            line-height: 1rem;
+            font-size: 16px;
+        }
+
+        .ethereum
+        { 
+            color: $secondary-text-color;
+
+            img {              
+                float: left;
+                padding-right: 5px;
+            }
+        }
+
+        .clock {
+            color: $primary-text-color;
+
+            img {
+                float: left;
+                padding-right: 5px;
+            }
+        }
+        
+    } 
+    
+    hr {
+        color: linear_gradient()
+    }
+
+    .avatar {
+        display: inline-block;
+        line-height: 2rem;
+        color: $primary-text-color;
+        font-size: 0.9rem;
+
+        img {
+            float: left;
+            margin-right: 20px;             
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border:1px solid white;
+        }
+
+        a {
+            text-decoration: none;
+            color: $light-text-color;
+        }
+
+        a:hover {
+             color: $secondary-text-color;
+        }
+    }
+}
