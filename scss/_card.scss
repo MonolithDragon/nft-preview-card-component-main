@@ -1,0 +1,97 @@
+.card {
+    border-radius: 0.9375rem;
+    margin: 10% auto 0;
+    padding: 1.5625rem;
+    width: 330px;
+    box-shadow:
+        0 16px 0 50px hsla(0, 0%, 3%, 0.03),
+        0 16px 0 20px hsla(0, 0%, 0%, 0.05);
+    background-color: $card-bg;    
+}
+
+.container {
+
+    & > p {
+        color: $primary-text-color;
+        line-height: 1.7;
+        @include weights("light");
+        font-size: 0.9rem;
+    }
+}
+
+.title,
+p,
+hr,
+.group {
+    margin-bottom: 1rem;
+}
+
+.title {
+
+    & > a {
+        color: $light-text-color;
+        text-decoration: none;
+    }
+
+    & > a:hover {
+        cursor: pointer;
+        color: $secondary-text-color;
+    }
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.ethereum,
+.clock {
+    display: inline-block;
+    line-height: 1.3;
+    font-size: 0.8rem;
+
+    & > img {
+        float: left;
+        padding-right: 0.3125rem;
+    }
+}
+
+.ethereum {
+    color: $secondary-text-color;
+    @include weights("bold");
+}
+
+.clock {
+    color: $primary-text-color;
+}
+
+hr {
+    color: $primary-text-color;
+    opacity: 0.15;
+}
+
+.avatar {
+    display: inline-block;
+    line-height: 2;
+    color: $primary-text-color;
+    font-size: 0.9rem;
+
+    & > img {
+        float: left;
+        margin-right: 0.9rem;
+        height: 1.8rem;
+        width: 1.8rem;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+
+    & > a {
+        text-decoration: none;
+        color: $light-text-color;
+    }
+
+    & > a:hover {
+        color: $secondary-text-color;
+    }
+}
+

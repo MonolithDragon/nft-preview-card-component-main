@@ -1,5 +1,3 @@
-// ---------- VARIABLES ----------//
-
 // Colors
 $primary-text-color: hsl(215, 51%, 70%);
 $secondary-text-color: hsl(178, 100%, 50%);
@@ -10,10 +8,14 @@ $light-text-color: hsl(0, 0%, 100%);
 
 // Fonts
 $font-outfit: 'Outfit', sans-serif;
-$font-size-paragraph: 18px;
+$font-size-paragraph: 1.125rem;
 $font-weights: (
     "ligth": 300,
     "normal":400,
     "bold": 600
 );
+
+@mixin weights($width) {
+    font-weight: map-get($map: $font-weights, $key: $width);
+}
 

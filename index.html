@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./public/css/style.css">
 
-  <title>Frontend Mentor | NFT preview card component</title>
+    <title>Frontend Mentor | NFT preview card component</title>
 
-</head>
+  </head>
 
-<body>
-  <article class="card">
-    <div class="image-group">
-      <img src="./public/images/image-equilibrium.jpg" alt="equilibrium" class="equilibrium">
-      <div class="view">
-        <img src="./public/images/icon-view.svg" alt="view">
-      </div>
-    </div>
+  <body>
 
-    <div class="container">
-      <h3 class="title"><a href="#">Equilibrium #3429</a></h3>
-
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-
-      <div class="group">
-        <div class="ethereum">
-          <img src="./public/images/icon-ethereum.svg" alt="ethereum">
-          0.041 ETH
+    <main>
+      <article class="card">
+        <div class="image-group">
+          <img src="./public/images/image-equilibrium.jpg" alt="equilibrium">
+          <div class="overlay">
+            <img src="./public/images/icon-view.svg" alt="view">
+          </div>
         </div>
-        <div class="clock">
-          <img src="./public/images/icon-clock.svg" alt="clock">
-          3 days left
+
+        <div class="container">
+          <h3 class="title"><a href="#">Equilibrium #3429</a></h3>
+
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+
+          <div class="group">
+            <div class="ethereum">
+              <img src="./public/images/icon-ethereum.svg" alt="ethereum">
+              0.041 ETH
+            </div>
+            <div class="clock">
+              <img src="./public/images/icon-clock.svg" alt="clock">
+              3 days left
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="avatar">
+            <img src="./public/images/image-avatar.png" alt="avatar">
+            Creation of <a href="#">Jules Wyvern</a>
+          </div>
         </div>
+      </article>
+    </main>
+    
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Lajos Joó</a>.
       </div>
-
-      <hr>
-
-      <div class="avatar">
-        <img src="./public/images/image-avatar.png" alt="avatar">
-        Creation of <a href="#">Jules Wyvern</a>
-      </div>
-    </div>
-  </article>
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
+    </footer>
+  </body>
 
 </html>
